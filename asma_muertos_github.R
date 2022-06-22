@@ -73,11 +73,11 @@ asma_def_st_año$int2<-ifelse(asma_def_st_año$año<2013,0,1)
 asma_def_st_año$trat1<-ifelse(asma_def_st_año$año<2008,0,ifelse(asma_def_st_año$año>2012,0,1))
 asma_def_st_año$trat2<-ifelse(asma_def_st_año$año<2013,0,1)
 
-ts_año_def <- lm( total ~ año + int1 + int2 + trat, data=asma_def_st_año )
+ts_año_def <- lm( total ~ año + int1 + int2 + trat1 + trat2, data=asma_def_st_año )
 
 #ts_año_def <- lm( total ~ año + int1 + trat, data=asma_def_st_año )
 
-asma_def_st_año$predict<-ts_año$fitted.values
+asma_def_st_año$predict<-ts_año_def$fitted.values
 summary(ts_año_def)
 asma_def_sin_intervención<-asma_def_st_año
 asma_def_sin_intervención$int1<-0
