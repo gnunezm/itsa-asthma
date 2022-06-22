@@ -13,3 +13,6 @@ Los primeras 10 líneas sirven para detectar si R tiene instaladas o no las libr
 La BBDD original, se transforma para obtener los intervalos de tiempo que se requieren para generar los conteos necesarios, posteriormente, se realiza un conteo de fechas individual y se genera una nueva base de datos con dicho conteo.
 
 Se obtiene del Instituto Nacional de Estadística, las esperanzas de vida por quinquenio para la población chilena, esto con el fin de poder determinar los Años de Vida Potencialmente Perdidos (AVPP, o YPLL por su sigla en Inglés) y poder definir la efectividad por población afectada y esperanza de vida
+
+
+Adjunto la BBDD, que es pública, en el siguiente link: https://www.icloud.com/iclouddrive/0f3BLG8ewbIcxZs7mQLOlbaCw#BD_Defunciones_Chile
